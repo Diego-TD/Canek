@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#articles {
+    background: aquamarine;
+}
+
+
+nav {
+    background-color: beige;
+    min-width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 100px;
+    list-style: none;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav li:first-child {
+    font-size: x-large;
+    margin-right: auto;
+}
+
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.earth-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    transition: max-width 0.5s ease-in-out;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carrousel {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .earth-img{
+        max-width: 90%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .carrousel {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .earth-img{
+        max-width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carrousel {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .earth-img{
+        max-width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carrousel {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .earth-img{
+        max-width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .carrousel {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    .earth-img{
+        max-width: 40%;
+    }
+}
